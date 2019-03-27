@@ -1,0 +1,4 @@
+
+    <app-header (data)="oncall($event)"></app-header> 
+<app-recipes *ngIf="data==='recip'"></app-recipes>
+<app-shopping-list *ngIf="data!=='recip'"></app-shopping-list>n

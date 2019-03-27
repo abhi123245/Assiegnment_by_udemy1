@@ -1,0 +1,14 @@
+<div class="row">
+ <div class="col-xs-18">
+   <button class="btn btn-primary">New recips</button>
+   </div> 
+</div>
+<div class="row" style="margin-top: 15px">
+ <div class="col-md-12">
+  <app-recipe-item
+  *ngFor="let recipe of  recipes"
+  [recipitem]="recipe"
+  (data)="recipecall(recipe)"
+  > </app-recipe-item>
+   </div> 
+</div>

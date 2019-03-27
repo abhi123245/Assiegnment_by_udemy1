@@ -1,0 +1,18 @@
+
+<div  class="row" style="margin-top: 20px;margin-left: 100px">
+ <div class="col-xs-12">
+   <app-shopping-edit (shopingdata)="call($event)"></app-shopping-edit></div></div>
+
+
+   <div  class="row" style="margin-top: 20px;margin-left: 100px">
+ <div class="col-xs-7">
+   <ul class="list-group">
+   <a class="list-group-item"
+   *ngFor="let shop of shoping"
+   style="cursor: pointer">{{shop.name}}({{shop.ammount}})
+   </a>
+   </ul>
+
+  
+  </div>  
+</div>

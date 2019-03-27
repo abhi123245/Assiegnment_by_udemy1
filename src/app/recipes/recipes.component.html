@@ -1,0 +1,16 @@
+
+<div class="container">
+<div  class="row">
+ <div class="col-md-5">
+  <app-recipe-list
+  (data1)="recipe1=$event">
+  </app-recipe-list></div>
+ 
+ <div class="col-md-7">
+ <app-recipe-detail
+ *ngIf="recipe1; "
+[recipe]="recipe1"
+ ></app-recipe-detail>
+ </div>
+  </div>  
+</div>

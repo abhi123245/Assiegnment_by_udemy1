@@ -1,0 +1,24 @@
+<div class="row">
+<div class="col-xs-12">
+ <form>
+  <div class="row">
+   <div  class="col-sm-5">
+   <label for="name">name</label>
+   <input type="text" id="name" class="form-control" (input)="callname($event)">
+   </div> 
+    <div  class="col-sm-3">
+   <label for="amm">ammount</label>
+   <input type="text" id="amm" class="form-control" (input)="callammount($event)">
+   </div> 
+  </div> 
+ <div class="row">
+ <div class="col-xs-12">
+ <button class="btn btn-success" (click)="onclick()">add</button>
+  <button class="btn btn-danger">clear</button>
+   <button class="btn btn-primary">delete</button>
+ </div>
+ <p>{{shoping.name}}</p>
+ </div>
+ </form> 
+</div>  
+</div>
